@@ -17,6 +17,6 @@ while True:
     data = fd.recv(BUFSIZ)
     if not data:
         break
-    print(data)
+    print(data.decode('utf-8'))
 
 fd.close()
